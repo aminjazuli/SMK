@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Negeri 1 - Program & Kegiatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Sekolah" class="logo-img">
+                <h2>SMK Shalatiyah Bitin</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil Sekolah</a></li>
+                <li><a href="program.html" class="active">Program & Kegiatan</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Program & Kegiatan</h1>
+        <p>Program Unggulan dan Galeri Kegiatan Sekolah</p>
+    </section>
+
+    <!-- Program Unggulan -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Program Unggulan</h2>
+            <div class="program-grid">
+                <!-- Program 1 -->
+                <div class="program-card" onclick="toggleProgram('program1')">
+                    <div class="program-icon">🔬</div>
+                    <h3>Kelas Sains Unggulan</h3>
+                    <p>Program khusus untuk siswa berprestasi di bidang sains</p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="program-card" onclick="toggleProgram('program2')">
+                    <div class="program-icon">🌐</div>
+                    <h3>Kelas Bahasa Internasional</h3>
+                    <p>Menguasai bahasa asing dengan native speaker</p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="program-card" onclick="toggleProgram('program3')">
+                    <div class="program-icon">💻</div>
+                    <h3>Digital Literacy Program</h3>
+                    <p>Mengembangkan kemampuan teknologi digital</p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="program-card" onclick="toggleProgram('program4')">
+                    <div class="program-icon">🎨</div>
+                    <h3>Pengembangan Kreativitas</h3>
+                    <p>Wadah bagi siswa untuk mengekspresikan kreativitas</p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="program-card" onclick="toggleProgram('program5')">
+                    <div class="program-icon">🏃</div>
+                    <h3>Character Building</h3>
+                    <p>Pembentukan karakter dan kepemimpinan siswa</p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+
+                <!-- Program 6 -->
+                <div class="program-card" onclick="toggleProgram('program6')">
+                    <div class="program-icon">🌱</div>
+                    <h3>Green School Program</h3>
+                    <p>Menanamkan kesadaran lingkungan sejak dini</p>
+                    <span class="expand-btn">Lihat Detail →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Program 1 -->
+    <div id="modal-program1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program1')">&times;</span>
+            <h3>🔬 Kelas Sains Unggulan</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Program kelas khusus untuk siswa yang memiliki minat dan bakat di bidang sains (Matematika, Fisika,
+                    Kimia, Biologi). Program ini dirancang untuk mempersiapkan siswa menghadapi kompetisi sains tingkat
+                    nasional dan internasional.</p>
+
+                <h4>Fasilitas</h4>
+                <ul>
+                    <li>Laboratorium sains lengkap dan modern</li>
+                    <li>Bimbingan dari guru berpengalaman dan mentor dari universitas</li>
+                    <li>Akses ke jurnal ilmiah dan buku referensi</li>
+                    <li>Kesempatan mengikuti olimpiade sains</li>
+                </ul>
+
+                <h4>Kegiatan</h4>
+                <ul>
+                    <li>Praktikum intensif setiap minggu</li>
+                    <li>Research project</li>
+                    <li>Kunjungan ke pusat penelitian</li>
+                    <li>Science fair tahunan</li>
+                    <li>Persiapan OSN dan kompetisi internasional</li>
+                </ul>
+
+                <h4>Prestasi</h4>
+                <ul>
+                    <li>Juara 1 OSN Matematika Tingkat Provinsi (2024)</li>
+                    <li>Medali Perunggu International Science Competition (2023)</li>
+                    <li>Best Research Award Science Project Competition (2024)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 2 -->
+    <div id="modal-program2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program2')">&times;</span>
+            <h3>🌐 Kelas Bahasa Internasional</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Program untuk mengembangkan kemampuan berbahasa asing (Inggris, Mandarin, Jepang) dengan standar
+                    internasional. Siswa dibimbing oleh native speaker dan guru bersertifikat internasional.</p>
+
+                <h4>Fasilitas</h4>
+                <ul>
+                    <li>Language lab dengan teknologi terkini</li>
+                    <li>Native speaker dari berbagai negara</li>
+                    <li>Perpustakaan digital berbahasa asing</li>
+                    <li>Program pertukaran pelajar</li>
+                </ul>
+
+                <h4>Kegiatan</h4>
+                <ul>
+                    <li>Conversation class dengan native speaker</li>
+                    <li>English/Mandarin/Japanese Day setiap bulan</li>
+                    <li>Drama dan speech contest</li>
+                    <li>Cultural exchange program</li>
+                    <li>Persiapan TOEFL, IELTS, HSK, JLPT</li>
+                </ul>
+
+                <h4>Prestasi</h4>
+                <ul>
+                    <li>Juara 1 English Speech Contest Tingkat Nasional (2024)</li>
+                    <li>Best Delegate Model United Nations (2023)</li>
+                    <li>Rata-rata TOEFL Score 550+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 3 -->
+    <div id="modal-program3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program3')">&times;</span>
+            <h3>💻 Digital Literacy Program</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Program untuk membekali siswa dengan keterampilan digital yang dibutuhkan di era 4.0, meliputi
+                    coding, digital marketing, content creation, dan data analysis.</p>
+
+                <h4>Fasilitas</h4>
+                <ul>
+                    <li>Computer lab dengan spesifikasi tinggi</li>
+                    <li>Software profesional (Adobe Creative Suite, IDE, dll)</li>
+                    <li>Internet berkecepatan tinggi</li>
+                    <li>Studio multimedia</li>
+                </ul>
+
+                <h4>Kegiatan</h4>
+                <ul>
+                    <li>Workshop coding (Python, JavaScript, Web Development)</li>
+                    <li>Digital content creation</li>
+                    <li>Robotics dan IoT</li>
+                    <li>Cybersecurity awareness</li>
+                    <li>Project-based learning</li>
+                </ul>
+
+                <h4>Prestasi</h4>
+                <ul>
+                    <li>Juara 2 Hackathon Tingkat Nasional (2024)</li>
+                    <li>Best Innovation Award Robotics Competition (2023)</li>
+                    <li>Finalis National IT Competition (2024)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 4 -->
+    <div id="modal-program4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program4')">&times;</span>
+            <h3>🎨 Pengembangan Kreativitas</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Program untuk mengembangkan bakat seni dan kreativitas siswa melalui berbagai kegiatan seni, musik,
+                    teater, dan desain. Memberikan wadah bagi siswa untuk mengekspresikan diri secara kreatif.</p>
+
+                <h4>Fasilitas</h4>
+                <ul>
+                    <li>Studio seni dan musik</li>
+                    <li>Ruang teater dan auditorium</li>
+                    <li>Peralatan seni lengkap</li>
+                    <li>Galeri karya siswa</li>
+                </ul>
+
+                <h4>Kegiatan</h4>
+                <ul>
+                    <li>Workshop seni lukis, patung, dan kerajinan</li>
+                    <li>Latihan musik dan paduan suara</li>
+                    <li>Teater dan drama</li>
+                    <li>Photography dan videography</li>
+                    <li>Art exhibition tahunan</li>
+                </ul>
+
+                <h4>Prestasi</h4>
+                <ul>
+                    <li>Juara 1 Lomba Seni Lukis Tingkat Provinsi (2024)</li>
+                    <li>Best Performance Festival Teater Pelajar (2023)</li>
+                    <li>Gold Medal International Art Competition (2024)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 5 -->
+    <div id="modal-program5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program5')">&times;</span>
+            <h3>🏃 Character Building</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Program pembentukan karakter dan kepemimpinan untuk mempersiapkan siswa menjadi pemimpin masa depan
+                    yang berintegritas, bertanggung jawab, dan peduli sosial.</p>
+
+                <h4>Fasilitas</h4>
+                <ul>
+                    <li>Ruang OSIS dan organisasi siswa</li>
+                    <li>Lapangan olahraga lengkap</li>
+                    <li>Area outbound</li>
+                    <li>Aula serbaguna</li>
+                </ul>
+
+                <h4>Kegiatan</h4>
+                <ul>
+                    <li>Leadership training</li>
+                    <li>Outbound dan team building</li>
+                    <li>Community service</li>
+                    <li>Organisasi siswa (OSIS, MPK, Pramuka)</li>
+                    <li>Pelatihan public speaking</li>
+                </ul>
+
+                <h4>Hasil</h4>
+                <ul>
+                    <li>Siswa menjadi lebih percaya diri</li>
+                    <li>Kemampuan leadership meningkat</li>
+                    <li>Empati dan kepedulian sosial berkembang</li>
+                    <li>Alumni menjadi pemimpin di berbagai bidang</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Program 6 -->
+    <div id="modal-program6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalProgram('program6')">&times;</span>
+            <h3>🌱 Green School Program</h3>
+            <div class="program-detail">
+                <h4>Deskripsi Program</h4>
+                <p>Program untuk menanamkan kesadaran lingkungan dan gaya hidup ramah lingkungan kepada seluruh warga
+                    sekolah. Menciptakan lingkungan sekolah yang hijau, bersih, dan berkelanjutan.</p>
+
+                <h4>Fasilitas</h4>
+                <ul>
+                    <li>Taman sekolah dan greenhouse</li>
+                    <li>Bank sampah sekolah</li>
+                    <li>Sistem pengelolaan air hujan</li>
+                    <li>Solar panel untuk energi alternatif</li>
+                </ul>
+
+                <h4>Kegiatan</h4>
+                <ul>
+                    <li>Penanaman pohon dan pemeliharaan taman</li>
+                    <li>Pengelolaan sampah organik (composting)</li>
+                    <li>Kampanye pengurangan plastik</li>
+                    <li>Daur ulang dan kerajinan dari barang bekas</li>
+                    <li>Environmental education</li>
+                </ul>
+
+                <h4>Prestasi</h4>
+                <ul>
+                    <li>Sekolah Adiwiyata Tingkat Nasional (2023)</li>
+                    <li>Green School Award (2024)</li>
+                    <li>Zero Waste School Program Champion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galeri -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Galeri Kegiatan</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Upacara Bendera</h4>
+                        <p>Kegiatan rutin setiap hari Senin</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Olimpiade Sains</h4>
+                        <p>Persiapan OSN 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Study Tour</h4>
+                        <p>Kunjungan edukatif ke museum</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Pentas Seni</h4>
+                        <p>Annual art performance 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Bakti Sosial</h4>
+                        <p>Kegiatan peduli masyarakat</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Lomba Olahraga</h4>
+                        <p>Turnamen basket antar kelas</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>English Day</h4>
+                        <p>Program mingguan bahasa Inggris</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Lab Experiment</h4>
+                        <p>Praktikum kimia kelas XI</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Outbound Training</h4>
+                        <p>Character building program</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Wisuda Kelas XII</h4>
+                        <p>Pelepasan angkatan 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Coding Workshop</h4>
+                        <p>Digital literacy program</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img">📸</div>
+                    <div class="gallery-overlay">
+                        <h4>Green School</h4>
+                        <p>Penanaman pohon bersama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SMK Shalatiyah Bitin</h3>
+                    <p>Sekolah unggulan dengan prestasi tinggi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil Sekolah</a></li>
+                        <li><a href="program.html">Program & Kegiatan</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>📍 Jalan Keramat No. 173</p>
+                    <p>📞 (0511) 123-4567</p>
+                    <p>✉️ info@sman1.sch.id</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SMK Shalatiyah Bitin. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
